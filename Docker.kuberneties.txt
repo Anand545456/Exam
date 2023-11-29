@@ -1,0 +1,34 @@
+*create simple spring boot application file.
+*add dependency web
+*spring application :
+
+@springBootApplicaton
+@Restcontroller
+public clas..............
+			@GetMapping("/message")
+			public string displayMessage()
+			{
+			   return "Testing Kubernetise"
+
+*right click on application 
+and create new file(Docker file)in target folder			}   
+
+in docker file :
+
+FROM openjdk:8
+EXPOSE 8080
+ADD target/spring-docker.jar spring-docker.jar
+ENCRYPTION ["java","jar","/spring-docker.jar"]
+
+*IN pom file <filename>spring-docker</filename>
+</build>(change the file name as what u wish)then save it
+
+*right click and run maven install
+*open cmd propmt and select target folder
+
+
+
+
+
+
+
